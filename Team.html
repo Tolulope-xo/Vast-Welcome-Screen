@@ -4,196 +4,170 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap"
-      rel="stylesheet"
-    />
     <title>Vast</title>
+    <link
+      href="@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;500&display=swap');"rel="stylesheet"
+    />
+
     <style>
       * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        overflow-x: hidden;
-      }
-      @font-face {
-        font-family: Avenir;
-        src: url(./assets/AvenirLTStd-Book.otf);
-      }
+  padding: 0;
+  margin: 0;
+text-decoration: none;
+}
 
-      @font-face {
-        font-family: Trap;
-        src: url(./assets/Trap-Black\ 900.otf);
-      }
+@font-face {
+  font-family: Avenir;
+  src: url(https://res.cloudinary.com/vast/raw/upload/v1664493457/AvenirLTStd-Book_x8mrya.otf);
+}
 
-      .logo {
-        background: white;
-        width: 100vw;
-        height: 20vh;
-        border-bottom: 5px solid black;
-        text-align: left;
-        position: relative;
-      }
+@font-face {
+  font-family: Trap;
+  src: url(https://res.cloudinary.com/vast/raw/upload/v1664493456/Trap-Black_900_ebumxl.otf);
+}
 
-      .logo img {
-        width: 6rem;
-        position: absolute;
-        top: 50%;
-        left: 10%;
-        transform: translate(10%, -50%);
-      }
+.logo {
+  background: white;
+  width: 100vw;
+  height: 10vh;
+  border-bottom: 10px solid black;
+  padding-left: 5rem;
+  position: relative;
+  padding-right: 5rem;
+}
 
-      .header {
-        padding-left: 10%;
-        padding-right: 10%;
-        height: 55rem;
-      }
+.logo img {
+  width: 6rem;
+}
 
-      .header h3 {
-        padding-top: 3rem;
-        font-size: 38px;
-        font-weight: 900;
-        line-height: 54px;
-        letter-spacing: -0.04em;
-        color: #3484ed;
-        font-family: Avenir;
-      }
 
-      .header p {
-        font-family: "M PLUS Rounded 1c", sans-serif;
-        font-size: 20px;
-        font-weight: 500;
-        line-height: 36px;
-        letter-spacing: -0.04em;
-      }
+.head1,
+.head2 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+  position: absolute;
+  font-family: "Outfit", sans-serif;
+}
 
-      .header button {
-        height: 60px;
-        width: 297px;
-        font-size: 20px;
-        top: 200px;
-        border-radius: 8px;
-        border: 1px solid #3484ed;
-        background: #3484ed;
-        font-family: Trap;
-        font-size: 18px;
-        font-weight: 900;
-        line-height: 24px;
-        letter-spacing: 0em;
-        cursor: pointer;
-      }
+h2 {
+  color: #3484ed;
+  font-family: Avenir;
+font-size: 36px;
+font-weight: 850;
+line-height: 54px;
+letter-spacing: -0.04em;
+text-align: left;
+padding-top: 3rem;
 
-      button a {
-        text-decoration: none;
-        color: #ffffff;
-      }
+}
 
-      .number {
-        font-family: Trap;
-        font-size: 36px;
-        font-weight: 900;
-        line-height: 55px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: #3484ed;
-      }
-      .footer {
-        height: 35vh;
-        background: #1e1e1e;
-        background-repeat: no-repeat;
-        justify-content: center;
-        text-align: center;
-        position: relative;
-        transform: scaleY(1);
-        bottom: 0;
-        align-items: center;
-      }
+.head2 {
+  background-color: #1e1e1e;
+  color: rgba(255, 255, 255, 0.8);
+  width: 100vw;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-family: Avenir;
+font-size: 14px;
+font-weight: 400;
+line-height: 29px;
+letter-spacing: 0em;
+position: absolute;
 
-      .vastimage {
-        position: absolute;
-        right: 0rem;
-        z-index: -1;
-      }
-      .vast img {
-        width: 5rem;
-        margin-top: 3rem;
-      }
-      .vast p {
-        color: grey;
-        width: 15rem;
-        text-align: center;
-        line-height: 25px;
-        align-items: center;
-        margin: auto;
-        font-family: Avenir;
-        font-size: 14px;
-      }
-      .info {
-        padding-top: 1rem;
-        line-height: 20px;
-      }
-      .images {
-        display: flex;
-        gap: 10px;
-        justify-content: center;
-      }
-      .images img {
-        width: 2rem;
-      }
+bottom: 0;
+}
 
-      @media only screen and (max-width: 414px) {
-        .header {
-          height: fit-content;
-        }
+.head1{
+  font-family: Outfit;
+font-size: 24px;
+font-weight: 600;
+line-height: 36px;
+letter-spacing: -0.04em;
+/* text-align: left; */
 
-        .footer {
-          height: fit-content;
-          overflow-y: hidden;
-        }
-      }
+font-family: Outfit;
+font-size: 24px;
+font-weight: 400;
+line-height: 36px;
+letter-spacing: -0.04em;
+
+}
+
+button {
+  height: 60px;
+  width: 297px;
+  font-size: 20px;
+  top: 200px;
+  border-radius: 8px;
+  border: 1px solid #3484ed;
+  background: #3484ed;
+  font-family: Trap;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 24px;
+  letter-spacing: 0em;
+  cursor: pointer;
+}
+
+button a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
     </style>
+
   </head>
   <body>
-    <div class="Template">
-      <div class="logo">
-        <img src="../assets/vast.png" />
-      </div>
-      <div class="header">
-        <h3>Welcome to Vast</h3>
+    <table>
+      <table>
+      <td class="logo">
+        <img src="https://res.cloudinary.com/vast/image/upload/v1664461475/vast_yjmilv.jpg">  
+</td>
+</table>
+<table>
+  <span  class="head1">
+        <h2>Welcome to Vast</h2>
         <p>
-          We're happy you signed up for Vast. Ready to take your online payment
-          to the next level? We are here to provide you with Naira and Dollar
-          virtual Credit Cards for free.
+          We're happy you signed up for Vast. Ready to take your online payment to the next level?  We are here to provide you with Naira and Dollar virtual Credit Cards for free.
         </p>
-        <br />
-        <div class="regards">
+        <br/>
+        <p class="regards">
           <p>Best Regards</p>
           <p>Vast Team</p>
-        </div>
-      </div>
-      <div class="footer">
-        <img class="vastimage" src="../assets/Group (7).png" />
-        <div class="vast">
-          <img src="../assets/vast.png" />
-          <p>
+        </p>
+    </span>
+      </table>
+      <span>
+      <table class="head2">
+        <td>
+        <img  src="https://res.cloudinary.com/vast/image/upload/v1664496768/Layer_x0020_1_volof3.png"/> 
+       </td>
+        <tr class="vast">
+           <img class="vastimage" src="https://res.cloudinary.com/vast/image/upload/v1664461475/ooorganize_1_gz1wsp.jpg" /> 
+         <td>
             PROHUB, Salawu Olabode Avenue,<br />
-            Idi-aba, Road, Abeokuta, Nigeria
-          </p>
-          <p class="info">info@usevast.com</p>
-          <div class="images">
-            <a href="https://www.facebook.com/usevastapp/"
-              ><img src="../assets/facebook.png"
-            /></a>
+            Idi-aba, Road, Abeokuta, Nigeria<br/>
+            info@usevast.com<br/>
             <a
-              href="https://www.twitter.com/usevastapp?s=21&t=PMg2OfFx3RXIGIxyuOecVQ"
-              ><img src="../assets/twitter.png"
-            /></a>
-            <a href="https://www.linkedin.com/company/usevastapp/"
-              ><img src="../assets/linkedin.png"
-            /></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+            href="https://www.facebook.com/usevastapp/"
+            ><img src="https://res.cloudinary.com/vast/image/upload/v1664496768/bx_bxl-facebook-circle_vygjjk.png"
+          />
+        </a>
+        <a
+            href="https://www.twitter.com/usevastapp?s=21&t=PMg2OfFx3RXIGIxyuOecVQ"
+            ><img src="https://res.cloudinary.com/vast/image/upload/v1664496768/ant-design_twitter-circle-filled_toyy00.png"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/company/usevastapp/"
+          ><img src="https://res.cloudinary.com/vast/image/upload/v1664496768/entypo-social_linkedin-with-circle_pi0bye.png"
+        />
+      </a>
+          </td>
+           
+  </table>
+</span>
+</table>
+</body>
 </html>
