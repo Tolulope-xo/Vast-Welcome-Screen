@@ -15,23 +15,8 @@
   margin: 0; box-sizing: border-box;
         overflow-x: hidden;
 text-decoration: none;
-
 }
 
-@media only screen and (max-width: 414px) {
-  .head1{
-  
-        height: fit-content;
-
-      }
-      
-.vastimage {
-        position: absolute;
-        right: 0rem;
-        z-index: 1;
-        bottom: 0;
-      }
-}
 
 @font-face {
   font-family: Avenir;
@@ -51,6 +36,8 @@ text-decoration: none;
   border-bottom: 10px solid black;
   padding-left: 5rem;
   padding-right: 5rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 }
 
 
@@ -58,7 +45,7 @@ h2 {
   color: #3484ed;
   font-family: Avenir;
 font-size: 36px;
-font-weight: 850;
+font-weight: 900;
 line-height: 54px;
 letter-spacing: -0.04em;
 text-align: left;
@@ -66,26 +53,33 @@ padding-top: 3rem;
 
 }
 
+.head1 h2{
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
 .head2 {
   background-color: #1e1e1e;
   color: rgba(255, 255, 255, 0.8);
   width: 100%;
-  align-items: center;
+  /* align-items: center; */
   text-align: center;
   justify-content: center;
   font-family: Avenir;
-font-size: 14px;
+font-size: 16px;
+margin-top: 2rem;
 font-weight: 400;
+height: 20rem;
 line-height: 35px;
+margin-bottom: 0;
 letter-spacing: 0em;
+padding-top: 1rem;
 }
 
 .head1{
   padding-left: 5rem;
         padding-right: 5rem;
-        font-family: Avenir;
-height: fit-content;
-      }
+        font-family: Avenir;      }
         .head1 h3 {
         padding-top: 3rem;
         font-size: 38px;
@@ -103,33 +97,27 @@ height: fit-content;
         line-height: 36px;
         letter-spacing: -0.04em;
       }
-button {
-  height: 3rem;
-  width: 15rem;
-  font-size: 20px;
-  top: 200px;
+.number22 {
   border-radius: 8px;
-  border: 1px solid #3484ed;
-  background: #3484ed;
   font-family: Trap;
-  font-size: 18px;
+  font-size: 35px;
   font-weight: 900;
+  color: #3484ED;
   line-height: 24px;
   letter-spacing: 0em;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
   cursor: pointer;
 }
 
-button a {
-  text-decoration: none;
-  color: #ffffff;
+.account, .regards{
+  color: black;
 }
-
 
 .vastimage {
         position: absolute;
         right: 0rem;
         z-index: 1;
-        bottom: 0;
       }
 
     </style>
@@ -139,22 +127,21 @@ button a {
     <table>
       <table>
       <td class="logo">
-        <img src="https://res.cloudinary.com/vast/image/upload/v1664461475/vast_yjmilv.jpg">  
+        <img  src="https://res.cloudinary.com/vast/image/upload/v1664496768/Layer_x0020_1_volof3.png"/> 
 </td>
 </table>
 <table>
   <section class="head1">
         <h2>Welcome to Vast</h2>
-        <p>
+        <p class="account">
           We're happy you signed up for Vast. Ready to take your online payment to the next level?  We are here to provide you with Naira and Dollar virtual Credit Cards for free.
         </p>
         <br />
-        
         <br />
-        <p class="regards">
+        <section class="regards">
           <p>Best Regards</p>
           <p>Vast Team</p>
-        </p>
+        </section>
       </section>
       </table>
       <span>
